@@ -1,10 +1,10 @@
 ---
 layout: post
 category: Info
-title: Blog Test
+title: My First Page
 date: 2018-06-01 15:55:24.000000000 +08:00
-tags: icurious, info
-keywords: icurious, icurious
+tags: github, website
+keywords: github, website
 redirect_from:
   - /2018/06/about/
 ---

@@ -21,4 +21,4 @@ excerpt:
 
 ### 联系方式
 
-* [网易邮箱](http://sharealex@163.com)
+* [网易邮箱](sharealex@163.com)
