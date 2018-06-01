@@ -1,9 +1,9 @@
 ---
 layout: post
-category: Info
+category: Test
 title: My First Page
 date: 2018-06-01 15:55:24.000000000 +08:00
-tags: author, info
+tags: author, test
 keywords: github, website
 ---
 
