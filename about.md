@@ -16,9 +16,9 @@ excerpt:
 
 ### 更多平台
 
-* [博客园](www.cnblogs.com/sharealex)
-* [新浪微博](weibo.com/fugang521)
+* [博客园](http://www.cnblogs.com/sharealex)
+* [新浪微博](http://weibo.com/fugang521)
 
 ### 联系方式
 
-* [网易邮箱](sharealex@163.com)
+* [网易邮箱](http://sharealex@163.com)

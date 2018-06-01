@@ -2,7 +2,7 @@
 title: Fugang
 subtitle: Committed to front-end and gis development.
 welcome_message: <a href="https://github.com/sharealex" target="_blank"></a>
-description: 夫天地者万物之逆旅也；光阴者百代之过客也。而浮生若梦，为欢几何？古人秉烛夜游，良有以也。况阳春召我以烟景，大块假我以文章。会桃花之芳园，序天伦之乐事。
+description: 时代的车轰轰地往前开。我们生存在车子上，经过的也许不过是几条熟悉的街道，可是漫天的火光中也自惊心动魄。就可惜我们只顾在一瞥即逝的店铺的橱窗里找寻我们自己的影子。我们只看见自己的脸，苍白，渺小，我们的自私与空虚，我们恬不知耻的愚蠢。谁都像我们一样，然而我们每个人都是孤独的。--张爱玲
 creator: <a href="http://sharealex.top">@Fugang</a>
 
 url: "http://sharealex.top"
@@ -24,8 +24,8 @@ nav:
    # - {title: Projects, description: My Projects, url: 'http://project.onevcat.com'}
    # - {title: Another Button, description: A button, url: 'http://example.com'}
    # - {title: Content,        in_site: true,  description: content,                 url: '/timeline'}
-     - {title: Cnblogs,       in_site: false,  description: Fugang's cnblogs,   url: 'http://www.cnblogs.com/sharealex'}
-   # - {title: GitHub,     in_site: false,  description: icurious's GitHub,      url: 'https://github.com/liuqidev'}
+     - {title: Cnblogs,       in_site: true,  description: Fugang's cnblogs,   url: 'http://www.cnblogs.com/sharealex'}
+   # - {title: GitHub,     in_site: false,  description: icurious's GitHub,      url: 'https://github.com/sharealex'}
    # - {title: Devs,   in_site: true,  description: Friends,                  url: '/friends'}
      - {title: About,        in_site: true,  description: About the author liuqi,        url: '/about'}
 
@@ -36,17 +36,14 @@ paginate_path: "page/:num/"
 
 # Comment
 comment:
-    disqus: fugang
-    # duoshuo: 
+    #disqus: fugang
     
 # Social
 social:
-    weibo: fugang
-    github: fugang
-  # twitter: 
-    rss: /feed.xml
-    mail: sharealex@163.com
-  # copyright: http://www.cnblogs.com/sharealex
+    weibo: fugang521
+    github: sharealex
+
+    copyright: http://www.cnblogs.com/sharealex
 
 # Google Analytics
 ga:
