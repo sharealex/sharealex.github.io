@@ -2,7 +2,7 @@
 layout: post
 category: Info
 title: 域名+解析+GitHub来搭建自己的个人网站
-date: 2016-11-11 19:36:00.000000000 +08:00
+date: 2018-06-01 17:36:00.000000000 +08:00
 tags: GitHub使用技巧 , 网站搭建
 ---
 
@@ -10,7 +10,7 @@ tags: GitHub使用技巧 , 网站搭建
 
 >版权声明：本文为 @icurious
 的原创文章，可以转载，但请务必注明作者和出处！！！
-原文链接：[www.blankspace.cn](http://www.blankspace.cn/2016/11/build-up-one-website/)
+原文链接：[sharealex.top](https://sharealex.top/2016/11/build-up-one-website/)
 
 ## 摘要
 本文主要介绍如何申请注册域名，使用GitHub上的开源项目来搭建一个网站/个人博客。由于无需购买服务器，所以没有数据库访问，很适合建立自己的博客或者个人网站，而不适合大型网站。本方法已经经过作者实际验证，真实有效，操作简单，适合没有任何网站开发经验的小白。
@@ -99,15 +99,14 @@ GitHub为每个注册的用户提供了一个专有的`[用户名].github.io`（
 
 解析成功。你的网站就建立成功了。在浏览器地址栏输入：
 http://主机记录值.域名
-（例如www.blankspace.cn）,就可以转到你自己的网站了。
+（例如sharealex.top）,就可以转到你自己的网站了。
 
-![ONECAT][14]
 
 当然由于是开源的项目，此时的界面是大牛[@onecat](https://github.com/onevcat)的样式和内容，距离文章开头的样式还需要进行一定的修改。至于如何修改，以及往其中添加新的页面，如何进行文章的更新，将在以后进行介绍。感谢你的阅读。
 
->版权声明：本文为 @icurious
+>版权声明：本文为 Fugang
 的原创文章，可以转载，但请务必注明作者和出处！！！
-原文链接：[www.blankspace.cn](http://www.blankspace.cn)
+原文链接：[sharealex.top](https://sharealex.top/2016/11/build-up-one-website/)
 
 
   [1]: http://ww2.sinaimg.cn/mw690/005Q2IiXgw1f9oczwoji1j311x0lb787.jpg
@@ -123,4 +122,3 @@ http://主机记录值.域名
   [11]: http://ww1.sinaimg.cn/mw690/005Q2IiXgw1f9ocyh7d30j30rf03e0tc.jpg
   [12]: http://ww1.sinaimg.cn/mw690/005Q2IiXgw1f9ode0zjpuj30rj0b9jso.jpg
   [13]: http://ww1.sinaimg.cn/mw690/005Q2IiXgw1f9ocyj9waij30zr0dkjv9.jpg
-  [14]: http://ww2.sinaimg.cn/mw690/005Q2IiXgw1f9ode7nsbvj311y0k0dmb.jpg
