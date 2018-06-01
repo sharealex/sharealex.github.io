@@ -1,11 +1,11 @@
 # Basic
-title: LiuQi-Dev
-subtitle: Liuqi and his daily.
-welcome_message: <a href="https://github.com/liuqidev" target="_blank"></a>
+title: Fugang
+subtitle: Committed to front-end and gis development.
+welcome_message: <a href="https://github.com/sharealex" target="_blank"></a>
 description: 夫天地者万物之逆旅也；光阴者百代之过客也。而浮生若梦，为欢几何？古人秉烛夜游，良有以也。况阳春召我以烟景，大块假我以文章。会桃花之芳园，序天伦之乐事。
-creator: <a href="http://www.blankspace.cn">@liuqidev</a>
+creator: <a href="http://sharealex.top">@Fugang</a>
 
-url: "http://www.blankspace.cn"
+url: "http://sharealex.top"
 
 permalink: /:year/:month/:title/
 
@@ -24,7 +24,7 @@ nav:
    # - {title: Projects, description: My Projects, url: 'http://project.onevcat.com'}
    # - {title: Another Button, description: A button, url: 'http://example.com'}
    # - {title: Content,        in_site: true,  description: content,                 url: '/timeline'}
-     - {title: CSDN,       in_site: false,  description: iCurious's CSDN blog,   url: 'http://blog.csdn.net/icurious'}
+     - {title: Cnblogs,       in_site: false,  description: Fugang's cnblogs,   url: 'http://www.cnblogs.com/sharealex'}
    # - {title: GitHub,     in_site: false,  description: icurious's GitHub,      url: 'https://github.com/liuqidev'}
    # - {title: Devs,   in_site: true,  description: Friends,                  url: '/friends'}
      - {title: About,        in_site: true,  description: About the author liuqi,        url: '/about'}
@@ -36,20 +36,19 @@ paginate_path: "page/:num/"
 
 # Comment
 comment:
-    disqus: liuqidev
+    disqus: fugang
     # duoshuo: 
     
 # Social
 social:
-    weibo: liuqidev
-    github: liuqidev
+    weibo: fugang
+    github: fugang
   # twitter: 
-    gplus: 112373242775367333102
     rss: /feed.xml
-    mail: liuqi.dev@gmail.com
-  # copyright: http://blog.csdn.net/icurious
+    mail: sharealex@163.com
+  # copyright: http://www.cnblogs.com/sharealex
 
 # Google Analytics
 ga:
     id: UA-86995833-1
-    host: www.blankspace.cn
+    host: sharealex.top
