@@ -1,15 +1,37 @@
-<!DOCTYPE html>
-<html lang="en">
+---
+layout: default
+---
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>sharealex</title>
-</head>
+<div class="main-post-list hidden">
 
-<body>
-    this is my github!
-</body>
+  <ol class="post-list">
+    <!--置顶-->
+    {% for post in site.posts %}
+      {% if post.istop %}
+        {% if paginator.page == 1 %}
+        <li>
+          <h2 class="post-list__post-title post-title"><a href="{{ post.url }}" title="访问 {{ post.title }}">[置顶]{{ post.title }}</a></h2>
+          <p class="excerpt">{{ post.content | strip_html | strip_newlines | truncate: 260 }}&hellip;</p>
+          <div class="post-list__meta"><time datetime="{{post.date | date: date_to_xmlschema}}" class="post-list__meta--date date">{{ post.date | date: "%F"}}</time> &#8226; <span class="post-list__meta--tags tags">{{ post.category }}</span> <a class="btn-border-small" href={{ post.url }}>继续阅读</a></div>
+          <hr class="post-list__divider" />
+        </li>
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+    <!--普通文档流-->
+    {% for post in paginator.posts %}
+    {% if post.hide %}
+    {% else %}
+      <li>
+        <h2 class="post-list__post-title post-title"><a href="{{ post.url }}" title="访问 {{ post.title }}">{{ post.title }}</a></h2>
+        <p class="excerpt">{{ post.content | strip_html | strip_newlines | truncate: 260 }}&hellip;</p>
+        <div class="post-list__meta"><time datetime="{{post.date | date: date_to_xmlschema}}" class="post-list__meta--date date">{{ post.date | date: "%F"}}</time> &#8226; <span class="post-list__meta--tags tags">{{ post.category }}</span> <a class="btn-border-small" href={{ post.url }}>继续阅读</a></div>
+        <hr class="post-list__divider" />
+      </li>
+    {% endif %}
+    {% endfor %}
+  </ol>
 
-</html>
+  {% include pagination.html %}
+
+</div>
