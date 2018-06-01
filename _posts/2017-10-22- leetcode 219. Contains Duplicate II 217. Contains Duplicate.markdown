@@ -1,0 +1,11 @@
+---
+layout: post
+category: Leetcode
+title:  leetcode 219. Contains Duplicate II 217. Contains Duplicate
+date: 2017-10-22 09:49:00 +08:00
+keywords: set,map
+---
+
+`unordered_set `以及`unordered_map`的典型应用 ：leetcode 219. Contains Duplicate II 217. Contains Duplicate
+
+![219and217](http://img.blog.csdn.net/20171022094458904?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvaWN1cmlvdXM=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)

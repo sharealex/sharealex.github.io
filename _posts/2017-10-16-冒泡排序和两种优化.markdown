@@ -1,0 +1,181 @@
+---
+layout: post
+category: Algorithom
+title:  简单冒泡排序的写法和两种优化
+date: 2017-10-17 13:40:00 +08:00
+tags: 冒泡排序,算法
+---
+
+排序，就是将原来无序和混乱的东西按照一定的规则让其有序地排列，其也是许多工作例如查找的准备工作。
+在问题规模较小的情况下，人手工即可完成对于很多排序工作，然而问题规模过大时，使用人工就显得力不从心，例如在1s内让千万级对于千万级的数字进行排序，哪怕人动作再快，可不可能在如此短的时间内完成。
+计算机科学家对于排序算法的研究颇多也很深入。这个排序系类只当自己对于算法的简单回顾和实现验证，由于工作比较忙，所以写不了太详细，“绝知此事要躬行”，程序只有多动手敲才能加深理解。
+首先就从冒泡排序开始。
+
+> 冒泡排序(Bubble Sort)
+> 相关的资料很多，我只谈谈自己的理解。
+> **过程**：结合示例更好理解一些。给定[3, 1, 0, 2], 我想将它按照从小到大的顺序排成[0, 1, 2, 3], 我假定一个有序区间[ ]，最初是空的，这个有序区间只向一个地方增长，我假定是[ ] {3, 1, 0, 2}, 在这个无序区间的左边，那么这个有序区间每次就得囊括无序区间最小的数字，我们从无序区间的最后面开始，例如2，每次和前面的元素相比较，假如后面的元素比前面的小，我们就把他们交换。
+>定义i, [0,i)这个为有序,最终为[0, n)这个区间有序，即完成排序任务。j一开始指向无序区间的最后一个元素,每词循环j的范围从n-1,到i, arr[ j ]和arr[ j-1]相比较，依据上述条件来交换。
+1. [ ]｛3，1，0，2｝  i=0, [0, 0)为空，j从最后的元素2开始,每次和前面的元素比较, j=3,  {0, 2}比较，0<2， 不交换;
+2.  j--, j=2，2>0;{1, 0},1>0,交换，[ ]{3, 0, 1, 2}
+3.  j--, j=1, 1>0;{3, 0},3>0交换，[ ]{0, 3, 1, 2}
+4. j--,j=0,0==0；本次循环终止，可见最小的元素0被多次交换后被挪到了数组的最前面, i++将其囊括进去[{ 0, ] 3, 1, 2}
+5.  i=1,再进行第二次循环, 结果为[{ 0, 1,] 3, 2 }
+6.  i=2,再进行第三次循环, 结果为[{ 0, 1, 2,] 3 }
+7.  i=3,再进行第三次循环, 结果为[{ 0, 1, 2, 3 }]
+8.  i=4循环退出, 即完成了冒泡排序。
+9.  整个过程让人联想到吐泡泡的过程，这可能也是冒泡排序的又来吧。
+
+至于冒泡排序的写法，主要是双层循环，难点在于边界的处理。
+
+```
+//普通的冒泡排序1
+	void bubbleSort(vector<int>& vec, int n){
+		for (int i=0; i<n; ++i){
+			for (int j=n-1; j>i; --j){
+				if (vec[j]<vec[j-1])
+					swap(vec[j],vec[j-1]);
+			}
+		}
+	}
+
+	//依然是普通的冒泡排序
+    void bubbleSort2(vector<int>& vec, int n){
+		for (int i=0; i<n; ++i){
+			for (int j=0; j<n-1-i; ++j){
+				if (vec[j]>vec[j+1])
+					swap(vec[j],vec[j+1]);
+			}
+		}
+	}
+	//依然是普通的冒泡排序3
+	 void bubbleSort3(vector<int>& vec, int n){
+		for (int i=n-1; i>=0; --i){
+			for (int j=0; j<i; ++j){
+				if (vec[j]>vec[j+1])
+					swap(vec[j],vec[j+1]);
+			}
+		}
+	}
+
+	//依然是普通的冒泡排序4
+	 void bubbleSort4(vector<int>& vec, int n){
+		for (int i=n-1; i>0; --i){
+			for (int j=0; j<i; ++j){
+				if (vec[j]>vec[j+1])
+					swap(vec[j],vec[j+1]);
+			}
+		}
+	}
+```
+
+由于冒泡排序时间复杂度是O(n^2)，对于大规模的排序是难以胜任的。
+这里我做过测试，仅仅是10万量级的数据，冒泡排序就让人等得要死，但是其也并非一无是处，其适用于较小规模的数据，同时也是非常好实现的排序算法，重要的是能够和其他算法形成鲜明的对比，大雾~~
+```
+--Test for Random Array, Scope:100000 Random Range: [0, 100000]
+heapSortInPlace:0.028s
+heapSort2:0.029s
+heapSort:0.03s
+quickSort3Ways:0.039s
+quickSort2:0.027s
+quickSort:0.034s
+shellSort:0.033s
+mergeSort:0.046s
+insertionSort:9.158s
+selectionSort:17.791s
+bubbleSort:50.365s
+
+--Test for Random Array, Scope:100000 Random Range: [0, 20]
+heapSortInPlace:0.025s
+heapSort2:0.028s
+heapSort:0.031s
+quickSort3Ways:0.039s
+quickSort2:0.028s
+quickSort:0.029s
+shellSort:0.033s
+mergeSort:0.045s
+insertionSort:9.126s
+selectionSort:17.779s
+bubbleSort:50.2s
+
+--Test for Nearly Ordered Array, Scope:100000 Range: [0, 100000]
+heapSortInPlace:0.019s
+heapSort2:0.02s
+heapSort:0.03s
+quickSort3Ways:0.033s
+quickSort2:0.018s
+quickSort:0.019s
+shellSort:0.006s
+mergeSort:0.002s
+insertionSort:0.002s
+selectionSort:17.8s
+bubbleSort:18.254s
+
+```
+关于冒泡排序的优化，主要针对的是其交换的场合，如果说输入的数几乎是有序的，在排序的过程中其已经有序了，就让其循环提前终止，这是第一种思路。
+
+```
+//冒泡排序的优化版本，当输入的数组本身是有序的时候，及时退出
+	 void bubbleSort5(vector<int>& vec, int n){
+        bool flag=false;
+		for (int i=n-1; i>0; --i){
+                flag=false;
+			for (int j=0; j<i; ++j){
+				if (vec[j]>vec[j+1]){
+					swap(vec[j],vec[j+1]);
+					flag=true;//表示反转过
+                }
+			}
+            if (flag==false)break;
+		}
+	}
+```
+
+还有一种优化方法，不发生交换即表明符合有序条件，假如有序区间的边界和最后一次发生交换的位置之间也是有序的，所以可以一下子扩大有序区间，提高效率。
+
+```
+//冒泡排序的改进版本2
+//每次记录最后交换的位置(这里是最后交换的位置之前区间[0,lastSwap)都
+//是有序的)，只需要在从最后一个有序元素后一个元素继续循环交换即可
+	 void bubbleSort6(vector<int>& vec, int n){
+        int lastSwap=0;
+        int lastSwapTemp=0;
+		for (int i=0; i<n-1; ++i){
+            lastSwap=lastSwapTemp;
+			for (int j=n-1; j>lastSwap; --j){
+				if (vec[j]<vec[j-1]){
+					swap(vec[j],vec[j-1]);
+					lastSwapTemp=j;
+				}
+			}
+			if (lastSwap==lastSwapTemp)break;
+		}
+	}
+```
+
+作为测试的代码可以简单地调用一下：
+
+```
+
+int main(){
+    int n=20;
+
+    vector<int> vec;
+    srand(time(NULL));
+    for (int i=0;i<n;++i){
+        int a=rand()%n;
+        vec.push_back(a);
+    }
+    for (int j=0;j<n;++j){
+        cout<<vec[j]<<" ";
+    }
+    cout<<endl;
+    Solution().bubbleSort6(vec, n);
+    for (int k=0;k<n;++k){
+        cout<<vec[k]<<" ";
+    }
+    cout<<endl;
+
+    return 0;
+}
+
+```
