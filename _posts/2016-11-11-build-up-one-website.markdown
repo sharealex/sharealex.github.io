@@ -3,12 +3,12 @@ layout: post
 category: Info
 title: 域名+解析+GitHub来搭建自己的个人网站
 date: 2018-06-01 17:36:00.000000000 +08:00
-tags: GitHub使用技巧 , 网站搭建
+tags: GitHub使用技巧，网站搭建
 ---
 
 ---
 
->版权声明：本文为 @icurious
+>版权声明：本文为 Fugang
 的原创文章，可以转载，但请务必注明作者和出处！！！
 原文链接：[sharealex.top](https://sharealex.top/2018/06/build-up-one-website/)
 
@@ -23,6 +23,7 @@ tags: GitHub使用技巧 , 网站搭建
 
 ## 具体步骤
 **1. 购买域名**
+
 向域名提供商购买域名。作者熟悉的域名提供商：
 国外：[godaddy](http://www.godaddy.com/)
 国内：[腾讯云](http://www.qcloud.com/)、[阿里云](https://www.aliyun.com/)
@@ -60,6 +61,7 @@ tags: GitHub使用技巧 , 网站搭建
 
 
 **3. 编写网站代码或者使用开源的网站项目**
+
 先别着急，要是一点网站建立的经验都没有，最好使用开源的项目。GitHub是全世界最大的开源项目社区，上面关于网站制作的项目非常多。
 
 关于网站制作的比较著名开源主题有`jekyll`、`hexo`等，可以从网站找到相应创建网站的方法。这里我使用的大牛[@onecat](https://github.com/onevcat)的开源项目[vno-jekyll](https://github.com/onevcat/vno-jekyll)主题。
@@ -72,6 +74,7 @@ tags: GitHub使用技巧 , 网站搭建
 还有两步就可以搭建自己的网站了。接下来的工作，简单得超乎你的想象。
 
 **4. 将域名和刚创建的网站代码仓库相关联**
+
 GitHub为每个注册的用户提供了一个专有的`[用户名].github.io`（只有一个）这样一个网址，你就可以使用它来和自己购买的域名相关联。之所以不需要购买服务器或者云主机，原因就在GitHub服务器会帮你托管这个`[用户名].github.io`所用到的全部代码，自动运行。
 
 你要做的就是将刚刚fork的开源网站项目和自己购买的域名关联起来，还有最后三步就可完成。
