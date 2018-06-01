@@ -10,7 +10,7 @@ tags: GitHub使用技巧 , 网站搭建
 
 >版权声明：本文为 @icurious
 的原创文章，可以转载，但请务必注明作者和出处！！！
-原文链接：[sharealex.top](https://sharealex.top/2016/11/build-up-one-website/)
+原文链接：[sharealex.top](https://sharealex.top/2018/06/build-up-one-website/)
 
 ## 摘要
 本文主要介绍如何申请注册域名，使用GitHub上的开源项目来搭建一个网站/个人博客。由于无需购买服务器，所以没有数据库访问，很适合建立自己的博客或者个人网站，而不适合大型网站。本方法已经经过作者实际验证，真实有效，操作简单，适合没有任何网站开发经验的小白。
@@ -106,7 +106,7 @@ http://主机记录值.域名
 
 >版权声明：本文为 Fugang
 的原创文章，可以转载，但请务必注明作者和出处！！！
-原文链接：[sharealex.top](https://sharealex.top/2016/11/build-up-one-website/)
+原文链接：[sharealex.top](https://sharealex.top/2018/06/build-up-one-website/)
 
 
   [1]: http://ww2.sinaimg.cn/mw690/005Q2IiXgw1f9oczwoji1j311x0lb787.jpg
