@@ -50,3 +50,5 @@ social:
 ga:
     id: UA-86995833-1
     host: sharealex.top
+
+theme: jekyll-theme-architect
