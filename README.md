@@ -1,21 +1,5 @@
-# my-blog
+# 付刚的博客
 
-## Project setup
-```
-yarn install
-```
+[个人博客](http://sharealex.top)
 
-### Compiles and hot-reloads for development
-```
-yarn run serve
-```
-
-### Compiles and minifies for production
-```
-yarn run build
-```
-
-### Lints and fixes files
-```
-yarn run lint
-```
+[博客园](http://www.cnblogs.com/sharealex)
