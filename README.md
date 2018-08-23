@@ -1,6 +1,21 @@
-# 使用GitHub搭建的个人博客
+# my-blog
 
-### 声明和鸣谢
+## Project setup
+```
+yarn install
+```
 
-本站使用了Vno Jekyll的主题，它的源代码可以在 [Vno Jekyll](https://github.com/onevcat/vno-jekyll) 上找到。
+### Compiles and hot-reloads for development
+```
+yarn run serve
+```
 
+### Compiles and minifies for production
+```
+yarn run build
+```
+
+### Lints and fixes files
+```
+yarn run lint
+```
