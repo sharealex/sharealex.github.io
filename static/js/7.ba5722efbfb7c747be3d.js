@@ -1,0 +1,2 @@
+webpackJsonp([7],{vu9I:function(t,e,s){"use strict";Object.defineProperty(e,"__esModule",{value:!0});var n={render:function(){this.$createElement;this._self._c;return this._m(0)},staticRenderFns:[function(){var t=this.$createElement,e=this._self._c||t;return e("div",{staticClass:"about"},[e("br"),this._v(" "),e("h3",[this._v("关于付刚")]),this._v(" "),e("br")])}]},l=s("vSla")(null,n,!1,null,null,null);e.default=l.exports}});
+//# sourceMappingURL=7.ba5722efbfb7c747be3d.js.map
